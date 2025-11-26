@@ -1,0 +1,6 @@
+body {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  /* Azul claro hacia blanco */
+  background: linear-gradient(180deg, #e0f2ff, #ffffff);
+  color: #0f172a; /* similar a slate-900 */
+}
