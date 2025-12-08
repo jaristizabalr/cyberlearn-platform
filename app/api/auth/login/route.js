@@ -4,17 +4,6 @@ import { signToken } from "@/lib/jwt";
 import { cookies } from "next/headers";
 
 
-// ---- EMERGENCY LOGIN ----
-  if (email === "admin@local" && password === "admin123") {
-    const token = await signToken({ id: 1, email });
-    cookies().set("token", token, {
-      httpOnly: true,
-      path: "/",
-      maxAge: 60 * 60 * 24,
-    });
-    return Response.json({ message: "Login emergencia" });
-  }
-  // ---- END EMERGENCY LOGIN ----
 
 export async function POST(req) {
   const { email, password } = await req.json();
