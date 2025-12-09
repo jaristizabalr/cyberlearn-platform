@@ -1,0 +1,10 @@
+services:
+  db:
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: lhTEcKlOevHxKMwQVnCTPxVxYkvHodLS
+      POSTGRES_DB: railway
+    ports:
+      - "5432:5432"
+volumes:
+  db_data:
